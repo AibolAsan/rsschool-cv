@@ -8,6 +8,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aibol Asanov</title>
     <style>
+    @media (max-width: 600px) {
+        .header h1 {
+            font-size: 20px;
+        }
+        .header a {
+            font-size: 14px;
+        }
+        body {
+            padding-top: 50px;
+        }
+    }
     body {
         font-family: Arial, sans-serif;
         line-height: 1.6;
@@ -22,6 +33,7 @@
     }
 .header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -29,7 +41,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 60px;
+    height: auto;
     background-color: #333;
     z-index: 1000;
     }
