@@ -8,16 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aibol Asanov</title>
     <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
     body {
         font-family: Arial, sans-serif;
         line-height: 1.6;
-        padding-top: 60px; /* Space for fixed header */
-        background-color: #f4f4f4;
+        padding-top: 60px;
+        background-color: #e9367a;
     }
     img {
         display: block;
@@ -25,74 +20,118 @@
         border-radius: 10px;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
-      .header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 60px;
-        background-color: #333;
-        color: white;
-        display: flex;
-        align-items: center;
-        padding-left: 20px;
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #333;
+    z-index: 1000;
     }
-    .header div {
-        margin-right: 20px;
+    .header a,
+.header a:visited,
+.header a:hover,
+.header a:active {
+    color: white !important;
+    text-decoration: none;
+    font-size: 16px;
     }
-    .header h1 {
-        margin: 0;
-        font-size: 18px;
+.main {
+    max-width: 1000px;
+    margin: 80px auto 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    min-height: 100vh;
     }
     </style>
 </head>
 <body>
   <div class="header">
-    <div class="CONTACTS">
+    <a class="CONTACTS" href="#Contacts@">
       <h1>CONTACTS</h1>
-    </div>
-    <div class="EXPERIENCE">
+    </a>
+    <a class="EXPERIENCE" href="#Experience@">
       <h1>EXPERIENCE</h1>
-    </div>
-    <div class="SKILLS">
+    </a>
+    <a class="SKILLS" href="#Skills@">
       <h1>SKILLS</h1>
-    </div>
-    <div class="ABOUT ME">
+    </a>
+    <a class="ABOUT ME" href="#About me@">
       <h1>ABOUT ME</h1>
-    </div>
-    <div class="EDUCATION">
+    </a>
+    <a class="EDUCATION" href="#Education@">
       <h1>EDUCATION</h1>
-    </div>
-    <div class="LANGUAGES">
+    </a>
+    <a class="LANGUAGES" href="#Languages@">
       <h1>LANGUAGES</h1>
-    </div>
+    </a>
   </div>
 
-<img src="assets/img/Photo1.jpg" alt="Image no" style="width: 300px; height: auto;">
+<div class="main">
+  <img src="assets/img/Photo1.jpg" alt="Image no" style="width: 300px; height: auto;">
+  <h1 style="font-size: 100px">Aibol Asanov</h1>
+  <div id="Contact@" style="font-size: 30px">
+    <h2>Contacts</h2>
+    <ul>
+      <li>Country: Kazakhstan</li>
+      <li>City: Almaty</li>
+      <li>Email address: aibolasanov2001@gmail.com</li>
+      <li>GitHub: [AibolAsan](https://github.com/AibolAsan)</li>
+      <li>Discord: aiba5412</li>
+    </ul>
+  </div>
 
-<div><pre>
-# Contacts
-* Country: Kazakhstan
-* City: Almaty
-* Email address: aibolasanov2001@gmail.com
-* GitHub: [AibolAsan](https://github.com/AibolAsan)
-* Discord: aiba5412
-</pre></div>
-<div><pre>
-# About me
-I am a systems engineer from a telecommunications company. I work with management systems and servers. I have no experience in the field of programming. I hope to master the Front end in my free time and change my activities.
-</pre></div>
-# Skills
-GIT
-<div><pre>
-# Languages
-Kazakh - Native
-Russian - Advanced
-English - Beginner
-</pre></div>
-  
+  <div id="Experience@" style="font-size: 30px">
+    <h2>Experience</h2>
+    <ul>
+      <li>Sulpak - Technical Expert</li>
+      <li>UMAG - Technical Expert</li>
+      <li>AO KAZAKHTELECOM - Systems Engineer</li>
+      <li>PS CLOUD - Data Center Engineer</li>
+    </ul>
+    </p>
+  </div>
+
+  <div id="Skills@" style="font-size: 30px">
+    <h2>Skills</h2>
+    <p>
+  # Skills
+  GIT
+    </p>
+  </div>
+
+  <div id="About me@" style="font-size: 30px">
+    <h2>About me</h2>
+    <p>
+  # About me
+  I am a systems engineer from a telecommunications company. I work with management systems and servers. I have no experience in the field of programming. I hope to master the Front end in my free time and change my activities.
+    </p>
+  </div>
+
+  <div id="Education@" style="font-size: 30px">
+    <h2>Education</h2>
+    <p>
+  # Education
+  GIT
+    </p>
+  </div>
+
+  <div id="Languages@" style="font-size: 30px">
+    <h2>Languages</h2>
+    <ul>
+  Kazakh - Native
+  Russian - Advanced
+  English - Beginner
+    </ul>
+  </div>
+</div>
+
 </body>
 </html>
